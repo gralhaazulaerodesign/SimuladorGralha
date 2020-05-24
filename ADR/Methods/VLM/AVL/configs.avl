@@ -1,0 +1,65 @@
+configs
+
+#Mach
+0.04
+#IYsym IZsym Zsym
+0 0 0.0
+#Sref Cref Bref
+#Dimensoes_referencia_wing
+0.331 0.247 1.3403
+#XrefYref Zref
+#Localizacao_cg_wing
+0.0617 0 0
+
+#CDdp
+#arrasto parasita
+0.0
+
+#==================================================================
+SURFACE
+
+Wing
+
+#(Paineis na corda) (Distribuicao na corda) (Paineis na envergadura) (Distribuicao na envergadura)
+8 1.0 12 -2.0
+
+COMPONENT
+4
+
+YDUPLICATE
+0.0
+
+ANGLE
+#Angulo_incidencia_wing
+0
+#==================================================================
+SECTION
+
+#Xle Yle Zle Chord Ainc Nspanwise Sspace
+#Dimensao_wing_secao_1
+0 0 0 0.2497647812927154 0 0 0
+
+AFILE
+#arquivo_wing_1
+c:\Users\PICHAU\Desktop\ADR-master\ADR\Methods\VLM\AVL\airfoils\sd7037.dat
+#==================================================================
+SECTION
+#Xle Yle Zle Chord Ainc Nspanwise Sspace
+
+#Dimensao_wing_secao_2
+0 0.3267272747416359 0 0.2497647812927154 0 0 0
+#A definition of the second section.
+AFILE
+#arquivo_wing_2
+c:\Users\PICHAU\Desktop\ADR-master\ADR\Methods\VLM\AVL\airfoils\sd7037.dat
+#==================================================================
+SECTION
+#Xle Yle Zle Chord Ainc Nspanwise Sspace
+#Dimensao_wing_secao_3
+0 0.6701542803488243 0 0.2386781355462404 0 0 0
+#A definition of the second section.
+AFILE
+#arquivo_wing_3
+c:\Users\PICHAU\Desktop\ADR-master\ADR\Methods\VLM\AVL\airfoils\sd7037.dat
+#==================================================================
+
