@@ -12,7 +12,9 @@ setuptools.setup(
     url="https://github.com/CeuAzul/ADR",
     packages=setuptools.find_packages(),
     include_package_data=True,
-    install_requires=['numpy', 'matplotlib', 'pandas', 'deap', 'scipy'],
+    setup_requires=['wheel'],
+    install_requires=['avlwrapper', 'numpy',
+                      'matplotlib', 'pandas', 'scipy'],
     tests_requires=['pytest'],
     classifiers=[
         "Programming Language :: Python :: 3",

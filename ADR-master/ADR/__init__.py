@@ -1,3 +1,8 @@
-name = 'ADR'
+""" 
+ADR
+"""
+from .analyzer import analyzer
 
-print('ADR suscefully imported')
+name = "ADR"
+version = "0.1"
+print("ADR suscefully imported")

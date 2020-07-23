@@ -1,5 +1,5 @@
 from matplotlib import pyplot as plt
-import numpy as np
+
 
 def plot_aerodynamic_data(plane):
 
@@ -20,14 +20,14 @@ def plot_aerodynamic_data(plane):
     ax3.set_xlabel("Alpha")
     ax3.set_ylabel("CL")
     ax3.set_title("CL x Alpha for surfaces")
-    ax3.plot(plane.wing1.CL_alpha, label='Wing1')
-    ax3.plot(plane.wing2.CL_alpha, label='Wing2')
-    ax3.plot(plane.hs.CL_alpha, label='HS')
+    ax3.plot(plane.wing1.CL_alpha, label="Wing1")
+    ax3.plot(plane.wing2.CL_alpha, label="Wing2")
+    ax3.plot(plane.hs.CL_alpha, label="HS")
     ax3.grid()
     ax3.legend()
 
     ax4.set_xlabel("CD")
     ax4.set_ylabel("CL")
     ax4.set_title("CL x CD")
-    ax4.plot(plane.CD_alpha['CD'], plane.CL_alpha['CL'])
+    ax4.plot(plane.CD_alpha["CD"], plane.CL_alpha["CL"])
     ax4.grid()
